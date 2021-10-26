@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Not from './Components/Not/Not';
 import Branches from './Components/Branches/Branches';
-import Course from './Components/Course/Course';
+import Courses from './Components/Courses/Courses';
 
 
 
@@ -37,8 +37,8 @@ function App() {
           <Route path="/branches">
             <Branches></Branches>
           </Route>
-          <Route path="/courses">
-            <Course></Course>
+          <Route exact path="/courses">
+            <Courses></Courses>
           </Route>
           <Route path="*">
             <Not></Not>

@@ -1,11 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import {  Row } from 'react-bootstrap';
-import Course from '../Course/Course';
+import Courses from '../Courses/Courses'
+import { Row } from 'react-bootstrap';
+
+
+
 
 const CourseDetails = () => {
-    const [courses, setCourses] = useState([]);
+    const [courses, setCourses] = useState([])
     useEffect(() => {
         fetch('./data2.json')
             .then(res => res.json())
@@ -14,12 +17,13 @@ const CourseDetails = () => {
     return (
         <div>
             <h1>Our Most Popular Courses</h1>
-            <Row xs={1} md={2} className="g-4 mt-5">
-                {courses.map(course => <Course
-                    key={courses.key}
-                    course={course}></Course>)}
+            <Row xs={1} md={2} className="g-4">
+                {
+                    courses.map(course => <Courses course={course}></Courses>)
+                }
             </Row>
         </div>
+
 
     );
 };

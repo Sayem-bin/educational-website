@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 
-const Course = (props) => {
-    const { img, name, descriptions, price, Instructor } = props.course
+const Courses = (props) => {
+    const { name, img, descriptions, price, Instructor } = props.course;
     return (
         <div>
             <Col>
@@ -13,8 +13,9 @@ const Course = (props) => {
                         <Card.Text>
                             {descriptions}
                         </Card.Text>
-                        <p>Course Fee {price}Tk</p>
                         <p>Instructor {Instructor}</p>
+                        <p>Course {price}</p>
+                        <Button variant='primary'>Enroll Now</Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -22,4 +23,4 @@ const Course = (props) => {
     );
 };
 
-export default Course;
+export default Courses;

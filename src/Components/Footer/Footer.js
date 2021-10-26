@@ -1,8 +1,15 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 import React from 'react';
-import('./Footer.css')
+import('./Footer.css');
+
 
 
 const Footer = () => {
+    const element = <FontAwesomeIcon icon={faFacebook} />
+    const elements = <FontAwesomeIcon icon={faYoutube} />
+    const element2 = <FontAwesomeIcon icon={faGithub} />
 
     return (
         <div className='footer' >
@@ -20,9 +27,10 @@ const Footer = () => {
             </div>
             <div >
                 <h6>Follow Us</h6>
-                <p>facebook </p>
-                <p>Twitter</p>
-                <p>Youtube</p>
+
+                <p>{element}</p>
+                <p>{element2} </p>
+                <p>{elements}</p>
             </div>
 
         </div >
