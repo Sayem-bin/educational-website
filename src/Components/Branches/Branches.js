@@ -17,7 +17,7 @@ const Branches = () => {
 
             <Row xs={1} md={3} className="g-3 m-5 p-3">
                 {branches.map(branch => <Branch
-
+                    key={branch.key}
                     branch={branch}></Branch>)}
             </Row>
 

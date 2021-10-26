@@ -2,8 +2,7 @@
 import React from 'react';
 import CourseDetails from '../CourseDetails/CourseDetails';
 import img from '../../img/photo.jpg';
-import { Col, Container, Row } from 'react-bootstrap';
-import Courses from '../Courses/Courses';
+import { Col } from 'react-bootstrap';
 import('./Home.css')
 
 const Home = () => {

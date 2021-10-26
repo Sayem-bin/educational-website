@@ -12,7 +12,7 @@ const Services = () => {
     }, [])
     return (
         <div className="mt-5 mb-4">
-            <h2>We Offer Below Coures</h2>
+            <h2>We Offer Below Course</h2>
             <Row xs={1} md={3} className="g-3">
                 {services.map(service => <Service
                     key={service.key}

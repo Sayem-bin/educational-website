@@ -19,7 +19,9 @@ const CourseDetails = () => {
             <h1>Our Most Popular Courses</h1>
             <Row xs={1} md={2} className="g-4">
                 {
-                    courses.map(course => <Courses course={course}></Courses>)
+                    courses.map(course => <Courses
+                        key={course.key}
+                        course={course}></Courses>)
                 }
             </Row>
         </div>
